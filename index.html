@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Textos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-title-container">
+                <div class="logo1"><img src="./imagenes/Logo@2x.png" alt="Logo alura"></div>
+                <h1 class="titulo">Encriptador de textos</h1>
+            </div>
+        </header>
+        <main class="content">
+            <div class="Ingreso">
+                <textarea class="ingreso_texto" id="inputText" placeholder="Ingresa el texto aquí..."></textarea>
+                <div class="Atencion"><img src="./imagenes/bi_exclamation-circle-fill.png" alt="Es un signo de exclamacion">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones_Ingreso">
+                    <button id="encriptar" class="Boton_encriptar" onclick="encriptarTexto()">Encriptar</button>
+                    <button id="descencriptar" class="Boton_descencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+                    <button id="limpiar" class="Boton_limpiar" onclick="limpiarTablero()">Limpiar</button> 
+                </div>
+            </div>
+            <div class="Salida">
+                <img class="imagen" src="./imagenes/Muñeco.png" alt="Muñeco alura" style="display: block;">
+                <textarea id="outputText" readonly placeholder="Resultado..."></textarea>
+                <p class="mensaje" id="mensaje_salida">Ningun texto fue encontrado</p>
+                <button id="copiado" class="boton_copiado" onclick="copiartexto()">Copiar</button>
+            </div>
+        </main>
+        <footer>
+            <p class="diseño " id="mensaje_final">Creado por Kenneth Ortega para ALURA LATAM</p>
+        </footer>
+    </div>
+    <script src="encriptador.js"></script>
+</body>
+</html>
